@@ -6,3 +6,4 @@ $string['nametopics'] = 'Topic';
 $string['nameweeks'] = 'Week';
 $string['showall']='Show all';
 $string['namesite']='Site';
+$string['view']='Content:';
