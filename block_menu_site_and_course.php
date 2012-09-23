@@ -117,7 +117,7 @@ class block_menu_site_and_course extends block_base {
                 $text .='<li class="r0';
                 if(!empty($_GET[$format]) && $_GET[$format]==$section->section) {$text.=' current';}
                 $text .='">';
-                $text.='<div class="icon column c0"><img src="'.$OUTPUT->pix_url("/i/one").'" class="icon"></div><div class="column c1"><a href="'.$CFG->wwwroot.'/course/view.php?id='.$COURSE->id.'&'.$format.'='.$section->section.'" title="View '.strip_tags(str_replace('-', '',$summary)).'">';
+                $text.='<div class="icon column c0"><img src="'.$OUTPUT->pix_url("/i/one").'" class="icon"></div><div class="column c1"><a href="'.$CFG->wwwroot.'/course/view.php?id='.$COURSE->id.'&'.$format.'='.$section->section.'" title="'.get_string("view",'block_menu_site_and_course').' '.strip_tags(str_replace('-', '',$summary)).'">';
                 if (!empty($summary) && empty($name)) { $text .= $summary.'</a></div></li>'; } else {$text .= $name.'</a></div></li>';}
             }
         }
